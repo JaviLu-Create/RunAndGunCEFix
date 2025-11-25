@@ -3,7 +3,8 @@
     <TargetFramework>net472</TargetFramework>
     <OutputType>Library</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <NoWarn>CS0436,CS8019,CS0169,CS0649,CS0414</NoWarn>
+    <NoWarn>CS0436,CS8019,CS0169,CS0649,CS0414,CS1998,CS0219,CS0162,CS0168</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   
   <PropertyGroup>
