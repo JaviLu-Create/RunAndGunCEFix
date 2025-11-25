@@ -5,6 +5,7 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <NoWarn>CS0436</NoWarn>
   </PropertyGroup>
   
   <PropertyGroup>
@@ -17,5 +18,21 @@
   
   <ItemGroup>
     <PackageReference Include="Lib.Harmony" Version="2.3.0" />
+  </ItemGroup>
+  
+  <!-- Referencias de RimWorld -->
+  <ItemGroup>
+    <Reference Include="Verse">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Verse.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
   </ItemGroup>
 </Project>
