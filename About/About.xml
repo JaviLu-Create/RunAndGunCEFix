@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>RunAndGun + CE Compatibility Fix</name>
+    <author>Tú</author>
+    <targetVersion>1.6</targetVersion>
+    <description>Parche para arreglar el error "Failed to find injection point" entre RunAndGun y Combat Extended</description>
+    <packageId>YourName.RunAndGunCEFix</packageId>
+    <modDependencies>
+        <li>
+            <packageId>ceteam.combatextended</packageId>
+            <displayName>Combat Extended</displayName>
+        </li>
+        <li>
+            <packageId>runandgun</packageId>
+            <displayName>RunAndGun</displayName>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>ceteam.combatextended</li>
+        <li>runandgun</li>
+    </loadAfter>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+</ModMetaData>
