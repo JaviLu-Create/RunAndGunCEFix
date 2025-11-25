@@ -45,7 +45,6 @@ namespace RunAndGunCEFix
                 var harmonyType = harmonyAssembly.GetType("HarmonyLib.Harmony");
                 var harmonyInstance = Activator.CreateInstance(harmonyType, "YourName.RunAndGunCEFix");
                 
-                // Aquí iría la lógica de parcheo específica
                 Log("[RunAndGunCEFix] Harmony encontrado, preparando parches");
             }
             catch (Exception ex)
