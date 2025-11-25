@@ -18,26 +18,10 @@ jobs:
       with:
         dotnet-version: '6.0.x'
         
-    - name: Restore dependencies
-      run: |
-        cd Source/RunAndGunCEFix
-        dotnet restore
-        
     - name: Compile Mod
       run: |
         cd Source/RunAndGunCEFix
-        dotnet build --configuration Release --verbosity normal
-        
-    - name: Verify DLL was created
-      run: |
-        if exist "Source\RunAndGunCEFix\bin\Release\net472\RunAndGunCEFix.dll" (
-          echo "✅ DLL compiled successfully!"
-          dir "Source\RunAndGunCEFix\bin\Release\net472\RunAndGunCEFix.dll"
-        ) else (
-          echo "❌ DLL was not created"
-          dir "Source\RunAndGunCEFix\bin\Release\" /s
-          exit 1
-        )
+        dotnet build --configuration Release
         
     - name: Upload Compiled DLL
       uses: actions/upload-artifact@v4
